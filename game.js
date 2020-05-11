@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).click(function() {
+$(".start").click(function() {
   if (!started) {
 
     nextSequence();
@@ -15,7 +15,7 @@ $(document).click(function() {
   }
 });
 
-$(".btn").click(function() {
+$(".btn1").click(function() {
 
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
